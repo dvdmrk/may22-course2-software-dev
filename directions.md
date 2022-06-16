@@ -13,12 +13,16 @@
 2. Install EF Packages:
    - `dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design`
    - `dotnet add package Microsoft.EntityFrameworkCore.Sqlite`
+   - `dotnet add package Microsoft.EntityFrameworkCore.SqlServer`
    - `dotnet add package Microsoft.EntityFrameworkCore.Design`
    - `dotnet add package Microsoft.EntityFrameworkCore`
 3. Build your first Model (**[Entity]**):
    - Create a new class in the models folder, this will be the first table in your database
 4. Create your Database Context (Context.cs)
 ```csharp
+using Microsoft.EntityFrameworkCore;
+using [project name].Models;
+
 public class Context : DbContext
 {
    public Context() : base(){}
