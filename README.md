@@ -1,6 +1,6 @@
 # C# .NET Course Work
 
-This repository contains all project files and solutions from the May 2022 Software Dev 2 course.
+This repository contains all project files and solutions from the May 2022 Software Dev 2 course. Follow this guide to build your first [MVC CRUD App with SQLite](directions.md)
 
 ## Technologies:
 
