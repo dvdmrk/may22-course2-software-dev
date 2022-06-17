@@ -1,0 +1,56 @@
+@model Movie
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Movie</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Director" class="control-label"></label>
+                <input asp-for="Director" class="form-control" />
+                <span asp-validation-for="Director" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Budget" class="control-label"></label>
+                <input asp-for="Budget" class="form-control" />
+                <span asp-validation-for="Budget" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Profit" class="control-label"></label>
+                <input asp-for="Profit" class="form-control" />
+                <span asp-validation-for="Profit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Actor" class="control-label"></label>
+                <input asp-for="Actor" class="form-control" />
+                <span asp-validation-for="Actor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearReleased" class="control-label"></label>
+                <input asp-for="YearReleased" class="form-control" />
+                <span asp-validation-for="YearReleased" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

@@ -1,5 +1,7 @@
 # MVC CRUD App with SQLite
 
+See [MovieFlix.Core](MovieFlix.Core/) for example.
+
 **Dependencies:**
 
 - `dotnet tool install -g dotnet-ef`
@@ -21,7 +23,6 @@
 4. Create your Database Context (Context.cs)
 ```csharp
 using Microsoft.EntityFrameworkCore;
-using [project name].Models;
 
 public class Context : DbContext
 {
